@@ -629,6 +629,12 @@ footer ul.social-icons {
     color: black;
 }
 
+/* Carousel image aspect ratio fix */
+.section-index-index .carousel-item img {
+    aspect-ratio: 1336 / 470;
+    height: auto;
+}
+
 .section-index-index .honor-card {
     height: 100%;
     border: 0;
@@ -712,6 +718,7 @@ footer ul.social-icons {
 .section-index-index .swiper-slide img {
     width: 360px;
     aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .section-index-index .index-about-backgroundimg {
@@ -805,8 +812,25 @@ footer ul.social-icons {
     padding: 20px 40px;
 }
 
+.section-index-index .card-img-top.overflow-hidden {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-index-index .card-img-top.overflow-hidden img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .section-index-index .card-img-scale {
     transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .section-index-index .card-img-scale:hover {
